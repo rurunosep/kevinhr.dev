@@ -1,0 +1,22 @@
+body {
+	margin: 1rem;
+}
+
+h2 {
+	margin: 0;
+}
+
+.contact-info {
+	list-style: none;
+	padding: 0;
+}
+
+.contact-info li {
+	display: inline;
+}
+
+.project {
+	border: 2px solid;
+	margin-bottom: 1rem;
+	padding: 1rem;
+}
