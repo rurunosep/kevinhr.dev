@@ -5,105 +5,139 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
-		<title>Kevin Hernandez-Rives</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://kit.fontawesome.com/7f7a431d90.js" crossorigin="anonymous"></script>
+		<title>Kevin Hernandez-Rives - Software Developer</title>
 	</head>
 	<body>
 		<header>
-			<h1>Kevin Hernandez-Rives</h1>
-			<h2>Software Developer</h2>
+			<div class="name-and-title">
+				<h1>Kevin Hernandez-Rives</h1>
+				<br />
+				<h2>Software Developer</h2>
+			</div>
+
 			<ul class="contact-info">
-				<li>kevin.hernandez.rives@gmail.com</li>
-				-
-				<li><a href="https://github.com/rurunosep">github.com/rurunosep</a></li>
-				-
-				<li>908-359-4054</li>
+				<li><i class="far fa-envelope"></i>kevin.hernandez.rives@gmail.com</li>
+				<li>
+					<a href="https://github.com/rurunosep" target="_blank"
+						><i class="fab fa-github"></i>github.com/rurunosep</a
+					>
+				</li>
+				<li><i class="fas fa-mobile-alt"></i>1-908-358-4054</li>
 			</ul>
 		</header>
 
+		<hr />
+
 		<main>
-			<p>Fully self-taught software engineer with experience in stuff.</p>
-
-			<p>Currently in New Jersey, USA. Relocating to Seoul, South Korea or Tokyo, Japan.</p>
+			<p class="intro">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem provident tempora
+				quasi voluptatum eligendi porro minima debitis vero, sapiente pariatur et obcaecati quidem
+				aliquid tenetur accusantium consectetur molestias sit ipsam ullam magnam accusamus quia.
+				Reprehenderit, pariatur assumenda. Eos, dolore nulla.
+			</p>
 
 			<section class="project">
-				<h2>RuruFlashcards</h2>
-				<p>
-					Full-stack, single-page, web application to create, manage, and study flash cards, with
-					Google Cloud Text-to-Speech.
-				</p>
-				<p>JavaScript, React, Redux, Node.js, Express, MongoDB</p>
-				<p>
-					Code:
-					<a href="https://github.com/rurunosep/ruruflashcards" target="_blank"
-						>github.com/rurunosep/ruruflashcards</a
-					>
-					<br />
-					Demo:
-					<a href="https://ruruflashcards.herokuapp.com" target="_blank"
-						>ruruflashcards.herokuapp.com</a
-					>
-				</p>
+				<a href="images/ruruflashcards.png" target="_blank">
+					<img src="images/ruruflashcards.png" />
+				</a>
+				<div>
+					<h2>RuruFlashcards</h2>
+					<p class="desc">
+						Full-stack, single-page, web application to create, manage, and study flash cards, with
+						Google Cloud Text-to-Speech.
+					</p>
+					<p class="techs">JavaScript, React, Redux, Node.js, Express, MongoDB</p>
+					<p>
+						<a class="button" href="https://github.com/rurunosep/ruruflashcards" target="_blank"
+							>Code</a
+						>
+						<a class="button" href="https://ruruflashcards.herokuapp.com" target="_blank">Demo</a>
+					</p>
+				</div>
 			</section>
 
 			<section class="project">
-				<h2>Rust WebGL Engine</h2>
-				<p>Simple 3D rendering engine in the browser.</p>
-				<p>Rust, WebAssembly, WebGL</p>
-				<p>
-					Code:
-					<a href="https://github.com/rurunosep/rust-webgl" target="_blank"
-						>github.com/rurunosep/rust-webgl</a
-					>
-					<br />
-					Demo:
-					<a href="https://rwgle.herokuapp.com" target="_blank">rwgle.herokuapp.com</a>
-				</p>
+				<a href="images/rwgle.png" target="_blank">
+					<img src="images/rwgle.png" />
+				</a>
+				<div>
+					<h2>Rust WebGL Engine</h2>
+					<p class="desc">Simple 3D rendering engine in the browser.</p>
+					<p class="techs">Rust, WebAssembly, WebGL</p>
+					<p>
+						<a class="button" href="https://github.com/rurunosep/rust-webgl" target="_blank"
+							>Code</a
+						>
+						<a class="button" href="https://rwgle.herokuapp.com" target="_blank">Demo</a>
+					</p>
+				</div>
 			</section>
 
 			<section class="project">
-				<h2>RuruBoard</h2>
-				<p>Web forum where users can login, create threads, and add posts to threads.</p>
-				<p>PHP, MySQL, Bootstrap</p>
-				<p>
-					Code:
-					<a href="https://github.com/rurunosep/php-mysql-message-board" target="_blank"
-						>github.com/rurunosep/php-mysql-message-board</a
-					>
-					<br />
-					Demo:
-					<a href="https://ruruboard.herokuapp.com" target="_blank">ruruboard.herokuapp.com</a>
-				</p>
+				<a href="images/ruruboard.png" target="_blank">
+					<img src="images/ruruboard.png" />
+				</a>
+				<div>
+					<h2>RuruBoard</h2>
+					<p class="desc">
+						Web forum where users can login, create threads, and add posts to threads.
+					</p>
+					<p class="techs">PHP, MySQL, Bootstrap</p>
+					<p>
+						<a
+							class="button"
+							href="https://github.com/rurunosep/php-mysql-message-board"
+							target="_blank"
+							>Code</a
+						>
+						<a class="button" href="https://ruruboard.herokuapp.com" target="_blank">Demo</a>
+					</p>
+				</div>
 			</section>
 
 			<section class="project">
-				<h2>Maze Game</h2>
-				<p>
-					Run through simple, successively larger, procedurally-generated mazes as quickly as you
-					can. Admire cute art and music by Lanea Zimmerman (Sharm) and SketchyLogic from
-					OpenGameArt.org.
-				</p>
-				<p>Java</p>
-				<p>
-					Code:
-					<a href="https://github.com/rurunosep/maze-game" target="_blank"
-						>github.com/rurunosep/maze-game</a
-					>
-					<br />
-					Demo:
-					<a href="https://github.com/rurunosep/maze-game/releases/tag/v1.0.0" target="_blank"
-						>github.com/rurunosep/maze-game/releases/tag/v1.0.0</a
-					>
-				</p>
+				<a href="images/mazegame.png" target="_blank">
+					<img src="images/mazegame.png" />
+				</a>
+				<div>
+					<h2>Maze Game</h2>
+					<p class="desc">
+						Run through simple, successively larger, procedurally-generated mazes as quickly as you
+						can. Admire cute art and music by Lanea Zimmerman (Sharm) and SketchyLogic from
+						OpenGameArt.org.
+					</p>
+					<p class="techs">Java</p>
+					<p>
+						<a class="button" href="https://github.com/rurunosep/maze-game" target="_blank">Code</a>
+						<a
+							class="button"
+							href="https://github.com/rurunosep/maze-game/releases/tag/v1.0.0"
+							target="_blank"
+							>Demo</a
+						>
+					</p>
+				</div>
 			</section>
 		</main>
 
+		<hr />
+
 		<footer>
 			<ul class="contact-info">
-				<li>kevin.hernandez.rives@gmail.com</li>
-				-
-				<li><a href="https://github.com/rurunosep">github.com/rurunosep</a></li>
-				-
-				<li>908-359-4054</li>
+				<li><i class="far fa-envelope"></i>kevin.hernandez.rives@gmail.com</li>
+				<li>
+					<a href="https://github.com/rurunosep" target="_blank"
+						><i class="fab fa-github"></i>github.com/rurunosep</a
+					>
+				</li>
+				<li><i class="fas fa-mobile-alt"></i>1-908-358-4054</li>
 			</ul>
 		</footer>
 	</body>
