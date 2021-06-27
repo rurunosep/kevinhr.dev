@@ -1,8 +1,5 @@
 /*
-TODO: projects
-	text stuff, row differentiation, image
 TODO: less boring
-TODO: mobile
 */
 
 body {
@@ -53,6 +50,11 @@ a.button:hover {
 	background-color: black;
 }
 
+.container {
+	max-width: 1200px;
+	margin: auto;
+}
+
 .name-and-title {
 	width: fit-content;
 	width: -moz-fit-content;
@@ -87,9 +89,8 @@ a.button:hover {
 	padding-right: 0.5rem;
 }
 
-/* TODO: size  */
 main {
-	width: 1000px;
+	width: 80%;
 	margin: auto;
 }
 
@@ -102,8 +103,6 @@ main {
 	align-items: center;
 	justify-content: space-between;
 	gap: 2rem;
-	/* margin: 2rem auto; */
-
 	padding: 1rem 0;
 	border-top: 1px dotted black;
 }
@@ -112,9 +111,7 @@ main {
 	flex-direction: row-reverse;
 }
 
-/* TODO: image size (add to html, too) */
 .project img {
-	width: 400px;
 	border: 1px solid rgb(80%, 80%, 80%);
 	box-shadow: 5px 5px 5px rgb(80%, 80%, 80%);
 }
@@ -123,7 +120,50 @@ main {
 	font-weight: 400;
 }
 
-.project .techs {
+.project .details .techs {
 	font-style: italic;
 	color: rgb(30%, 30%, 30%);
+}
+
+@media (max-width: 1000px) {
+	.name-and-title h1 {
+		font-size: 9.5vw;
+	}
+	.contact-info {
+		justify-content: space-around;
+	}
+	.contact-info li {
+		flex: none;
+	}
+	.project,
+	.project:nth-of-type(even) {
+		flex-direction: column;
+	}
+	.project .details {
+		width: 100%;
+	}
+}
+
+@media (max-width: 750px) {
+	.name-and-title {
+		margin-bottom: 2rem;
+	}
+	.contact-info {
+		flex-direction: column;
+	}
+	.project {
+		gap: 1rem;
+	}
+}
+
+@media (max-width: 500px) {
+	.name-and-title h2 {
+		font-size: 1em;
+	}
+	main {
+		width: 100%;
+	}
+	.project img {
+		max-width: 100%;
+	}
 }
