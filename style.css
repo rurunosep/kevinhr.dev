@@ -133,9 +133,18 @@ main {
 	font-weight: 400;
 }
 
-.project .details .techs {
+.techs {
 	font-style: italic;
 	color: rgb(30%, 30%, 30%);
+}
+
+.cccnj {
+	padding: 1rem 0;
+	border-top: 1px dotted black;
+}
+
+.cccnj h2 {
+	font-weight: 400;
 }
 
 @media (max-width: 1000px) {
