@@ -96,6 +96,7 @@ a.button:hover {
 .contact-info li {
 	flex: 1;
 	text-align: center;
+	white-space: nowrap;
 }
 
 .contact-info i {
@@ -166,21 +167,19 @@ main {
 	.project,
 	.project:nth-of-type(even) {
 		flex-direction: column;
+		gap: 1rem;
 	}
 	.project .details {
 		width: 100%;
 	}
 }
 
-@media (max-width: 750px) {
+@media (max-width: 850px) {
 	.name-and-title {
 		margin-bottom: 2rem;
 	}
 	.contact-info {
 		flex-direction: column;
-	}
-	.project {
-		gap: 1rem;
 	}
 }
 
